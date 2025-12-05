@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bioma Cerrado</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #eeeeee;
+        color: #222;
+      }
+      .header-box {
+        background: #222;
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+      }
+      .section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #000;
+      }
+      .card {
+        border-radius: 15px;
+        background-color: #fdfdfd;
+        border: 1px solid #ccc;
+      }
+      .hero {
+        background-image: url("img/banerindex.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 120px 0;
+        color: white;
+        text-shadow: 2px 2px 10px #000000;
+      }
+      /* Container da fauna */
+      .item-container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: nowrap !important; /* impede quebra */
+      }
+      /* Container da fauna */
+      .fauna-container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: nowrap !important; /* impede quebra */
+      }
+      .imgBioma {
+        border-radius: 10px;
+        height: 280px !important; /* altura fixa */
+        width: 100% !important; /* ocupa toda a largura */
+      }
+      /* Texto */
+      .fauna-text {
+        width: 50% !important;
+      }
+      .textoJ {
+        text-align: justify;
+      }
+      /* Carrossel */
+      .fauna-carousel {
+        width: 50% !important;
+      }
+
+      /* Corrige o pulo da imagem */
+      .fauna-carousel .carousel-item img {
+        height: 280px !important; /* altura fixa */
+        width: 100% !important; /* ocupa toda a largura */
+        object-fit: cover !important;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Cerrado</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+              <a href="sobre.html" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a href="bioma.html" class="nav-link">O Bioma</a>
+            </li>
+            <li class="nav-item">
+              <a href="impactos.html" class="nav-link">Impactos</a>
+            </li>
+            <li class="nav-item">
+              <a href="conservacao.html" class="nav-link">Conservação</a>
+            </li>
+            <li class="nav-item">
+              <a href="cop30.html" class="nav-link">Cop 30</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="text-center">
+        <h1 class="display-4 fw-bold">Bioma Cerrado</h1>
+        <p class="lead">
+          Conheça suas características naturais e importância ecológica.
+        </p>
+      </div>
+    </section>
+
+    <div class="container mt-5 mb-5">
+     
+
+    <div class="mb-5">
+        <h2 class="section-title">Clima</h2>
+
+        <div class="card p-4 shadow-sm fauna-container">
+          <!-- Texto -->
+          <div class="fauna-text">
+            <p class="textoJ">
+               O clima predominante no Cerrado é o
+            <strong>tropical sazonal</strong>, caracterizado por duas estações
+            bem definidas: a <strong>seca</strong> (de abril a setembro), com
+            baixa umidade e altas temperaturas, e a <strong>chuvosa</strong>
+            (de outubro a março), responsável por quase 90% do volume de chuvas
+            anual. As temperaturas médias variam entre
+            <strong>22°C e 27°C</strong>, podendo ultrapassar 40°C no auge da
+            seca. Essa alternância de clima influencia profundamente a vegetação
+            e os animais, favorecendo espécies adaptadas ao fogo e à escassez de
+            água.
+            </p>
+          </div>
+
+          <!-- IMG -->
+          <div class="carousel slide fauna-carousel" data-bs-ride="carousel">
+            <img class="imgBioma" src="img/imgSobre/ClimaCerrado.jfif" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+
+ <div class="mb-5">
+        <h2 class="section-title">Solo</h2>
+
+        <div class="card p-4 shadow-sm fauna-container">
+          <!-- Texto -->
+          <div class="fauna-text">
+            <p class="textoJ">
+              Os solos do Cerrado são antigos e altamente intemperizados,
+            geralmente <strong>ácidos</strong>,
+            <strong>pobres em nutrientes</strong> e com grande concentração de
+            alumínio. Apesar da baixa fertilidade, possuem alta permeabilidade,
+            permitindo boa infiltração da água. As plantas desenvolveram raízes
+            profundas que podem ultrapassar 10 metros, garantindo sobrevivência
+            durante períodos prolongados de seca.
+            </p>
+          </div>
+
+          <!-- IMG -->
+          <div class="carousel slide fauna-carousel" data-bs-ride="carousel">
+            <img class="imgBioma" src="img/imgSobre/SoloCerrado.jfif" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+
+ <div class="mb-5">
+        <h2 class="section-title">Vegetação</h2>
+
+        <div class="card p-4 shadow-sm fauna-container">
+          <!-- Texto -->
+          <div class="fauna-text">
+            <p class="textoJ">
+             Considerado a <strong>maior savana biodiversa do planeta</strong>, o
+            Cerrado apresenta fitofisionomias variadas, que vão desde campos
+            abertos até áreas de matas densas. A vegetação inclui árvores de
+            troncos retorcidos, cascas grossas e raízes profundas — adaptações
+            essenciais ao fogo natural e ao clima sazonal. O bioma abriga mais
+            de <strong>12 mil espécies de plantas</strong>, muitas endêmicas.
+            </p>
+          </div>
+
+          <!-- IMG -->
+          <div class="carousel slide fauna-carousel" data-bs-ride="carousel">
+            <img class="imgBioma" src="img/imgSobre/Vegetação.jfif" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+  
+
+  
+      <!-- Fauna (flex + carousel) -->
+      <div class="mb-5">
+        <h2 class="section-title">Fauna</h2>
+
+        <div class="card p-4 shadow-sm fauna-container">
+          <!-- Texto -->
+          <div class="fauna-text">
+            <p class="textoJ">
+              A fauna do Cerrado é extremamente rica e abriga espécies
+              emblemáticas e muitas vezes ameaçadas. Entre os mamíferos se
+              destacam o <strong>lobo-guará</strong>, o
+              <strong>tamanduá-bandeira</strong>, o
+              <strong>tatu-canastra</strong> e a <strong>onça-pintada</strong>.
+              A avifauna também é marcante, com espécies como a
+              <strong>ema</strong>, a <strong>seriema</strong>
+              e diversos tipos de araras e papagaios. Répteis e anfíbios são
+              abundantes e incluem serpentes, lagartos e sapos adaptados ao
+              clima seco. A diversidade de insetos é enorme, com milhares de
+              espécies de abelhas, besouros e borboletas.
+            </p>
+          </div>
+
+          <!-- Carrossel -->
+          <div
+            id="faunaCarousel"
+            class="carousel slide fauna-carousel"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner rounded shadow">
+              <div class="carousel-item active">
+                <img
+                  src="img/imgCarrocel/loboGuara.jpg"
+                  class="d-block w-100"
+                  alt="Lobo-guará"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="img/imgCarrocel/Tamandua.jpg"
+                  class="d-block w-100"
+                  alt="Tamanduá-bandeira"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="img/imgCarrocel/TatuCanastra.jpg"
+                  class="d-block w-100"
+                  alt="Tatu-canastra"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="img/imgCarrocel/Onça.jpg"
+                  class="d-block w-100"
+                  alt="Onça-pintada"
+                />
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#faunaCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#faunaCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+ <div class="mb-5">
+        <h2 class="section-title">Hidrografia</h2>
+
+        <div class="card p-4 shadow-sm fauna-container">
+          <!-- Texto -->
+          <div class="fauna-text">
+            <p class="">
+             O Cerrado é chamado de <strong>“caixa d'água do Brasil”</strong>,
+            pois abriga as nascentes de grandes rios que alimentam importantes
+            bacias hidrográficas, como a Amazônica, Tocantins-Araguaia, São
+            Francisco e Paraná. A vegetação profunda e os solos porosos
+            favorecem a infiltração da água, permitindo a recarga contínua de
+            aquíferos como o <strong>Guarani</strong> e o
+            <strong>Bambuí</strong>. Sua conservação é essencial para o
+            abastecimento hídrico do país.
+            </p>
+          </div>
+
+          <!-- IMG -->
+          <div class="carousel slide fauna-carousel" data-bs-ride="carousel">
+            <img class="imgBioma" src="img/imgSobre/hidrografiaCerrado.jfif" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+</div>
+
+    <footer class="text-center p-3" style="background-color: #000; color: #fff">
+      <p>Projeto Escolar — Bioma Cerrado • 2025</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

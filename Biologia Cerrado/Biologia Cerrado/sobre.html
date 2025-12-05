@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre o Cerrado</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #f5f5f5;
+        font-family: "Segoe UI", sans-serif;
+      }
+      header {
+        height: 300px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("https://images.unsplash.com/photo-1580674287405-803ecb21c40f?auto=format&fit=crop&w=1600&q=80")
+            center/cover;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-shadow: 2px 2px 6px #000;
+      }
+      .hero {
+        background-image: url("img/banerindex.jpg"); /* coloque o nome da sua imagem */
+        background-size: cover; /* faz a imagem preencher toda a área */
+        background-position: center; /* centraliza a imagem */
+        background-repeat: no-repeat; /* impede repetição */
+        padding: 120px 0; /* altura vertical da section */
+        color: rgb(255, 255, 255); /* deixa o texto visível */
+        text-shadow: 2px 2px 10px #000000;
+      }
+      .section-title {
+        font-size: 2.3rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      footer {
+        background: #13322b;
+        color: white;
+        padding: 20px 0;
+        margin-top: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Cerrado</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+              <a href="sobre.html" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a href="bioma.html" class="nav-link">O Bioma</a>
+            </li>
+            <li class="nav-item">
+              <a href="impactos.html" class="nav-link">Impactos</a>
+            </li>
+            <li class="nav-item">
+              <a href="conservacao.html" class="nav-link">Conservação</a>
+            </li>
+            <li class="nav-item">
+              <a href="cop30.html" class="nav-link">Cop 30</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="text-center">
+        <h1 class="display-4 fw-bold">Sobre o Cerrado</h1>
+        <p class="lead">História, localização e importância do bioma</p>
+      </div>
+    </section>
+    
+    <!-- Conteúdo -->
+    <div class="container py-5">
+      <h2 class="section-title mb-4">O que é o Cerrado?</h2>
+      <p class="lead text-center mx-auto" style="max-width: 900px">
+        O Cerrado é o segundo maior bioma da América do Sul e ocupa grande parte
+        do território brasileiro. É considerado a savana mais biodiversa do
+        mundo, reunindo plantas, animais, formações vegetais únicas e uma enorme
+        riqueza hídrica que abastece grande parte do país.
+      </p>
+
+      <hr class="my-5" />
+
+      <div class="row g-4">
+        <div class="col-md-12">
+          <div class="p-4 bg-white shadow rounded">
+            <div class="row align-items-center">
+              <!-- Texto -->
+              <div class="col-md-6">
+                <h3>Localização</h3>
+                <p>
+                  O Cerrado está localizado principalmente no Planalto Central
+                  brasileiro, abrangendo estados como Goiás, Mato Grosso, Mato
+                  Grosso do Sul, Tocantins, Minas Gerais, Bahia, Maranhão, Piauí
+                  e Distrito Federal.
+                </p>
+              </div>
+
+              <!-- Imagem -->
+              <div class="col-md-6 text-center">
+                <img
+                  src="img/mapaCerrado1.jpeg"
+                  class="img-fluid rounded shadow"
+                  style="max-height: 350px; object-fit: cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <div class="row g-4 flex-md-row-reverse">
+        <div class="col-md-6">
+          <div class="p-4 bg-white shadow rounded">
+            <h3>Importância Ecológica</h3>
+            <p>
+              O Cerrado é considerado o "berço das águas" do Brasil. Grandes
+              bacias hidrográficas, como a Amazônica, Tocantins-Araguaia, São
+              Francisco e Prata, dependem diretamente de seus aquíferos e
+              nascentes.
+            </p>
+            <p>
+              Além disso, sua biodiversidade impressiona: são mais de 12 mil
+              espécies de plantas, milhares de animais e um equilíbrio ecológico
+              único que sustenta diferentes ecossistemas.
+              <br /><br /><br /><br /><br /><br /><br />
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="img/AnimalCerrado.jpg"
+            class="img-fluid rounded shadow"
+            style="height: 400px"
+          />
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <div class="p-4 bg-white shadow rounded">
+        <h3>Curiosidades</h3>
+        <ul>
+          <li>
+            É o segundo maior bioma do Brasil, ficando atrás apenas da Amazônia.
+          </li>
+          <li>É a savana mais biodiversa do planeta.</li>
+          <li>
+            Mais de 40% das espécies vegetais são endêmicas (existem apenas
+            ali).
+          </li>
+          <li>O Cerrado já perdeu mais de 50% de sua área original.</li>
+          <li>É fundamental para o abastecimento de água do Brasil.</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 - Projeto Bioma Cerrado</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
